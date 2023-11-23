@@ -85,5 +85,32 @@
     echo "<br>".str_replace("giardino", "casa", $string);
     echo "<br>".strtoupper($string);
 
+    echo "<br><h1>Esercizio 6</h1>";
+
+    $array = array(1, -2, 3, 6, -7, 0);
+    $negativi = 0;
+
+    //substitute negativi with 0
+    foreach($array as $key => $value){
+        if($value < 0){
+            $negativi += $array[$key];
+            $array[$key] = 0;
+        }
+    }
+
+    echo "<br>La somma dei negativi è " .$negativi;
+
+    foreach($array as $value){
+        echo "<br>".$value;
+    }
+
+    //implode
+    
+
+    echo "<br><h1>Esercizio 7</h1>";
+
+    $array = array(2, 1, 4, 6, 25);
+
+
 
 ?>
